@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HVA-Of-KJR">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--VC1-->
+        <!--Jahiz-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="VC1" customModule="jahez_9" customModuleProvider="target" sceneMemberID="viewController">
@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="lqE-F9-2M8">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="restCell" id="lBB-NF-MiF" customClass="Cell1" customModule="jahez_9" customModuleProvider="target">
@@ -93,6 +93,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lqE-F9-2M8" secondAttribute="bottom" id="sa6-m7-fYl"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Jahiz" image="jahez" id="xXY-YW-qoQ"/>
                     <connections>
                         <outlet property="restTV" destination="lqE-F9-2M8" id="jE4-Bp-PaX"/>
                         <segue destination="x7e-hS-BHd" kind="show" identifier="show_menu" id="K1M-QL-Cy7"/>
@@ -235,10 +236,210 @@
             </objects>
             <point key="canvasLocation" x="652" y="80"/>
         </scene>
+        <!--Tasbih-->
+        <scene sceneID="xW0-HN-2ER">
+            <objects>
+                <viewController id="kDN-zd-nSy" customClass="ViewControllerTS" customModule="jahez_9" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3EN-lr-DXH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jf0-05-H9N">
+                                <rect key="frame" x="138" y="554" width="140" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="صفر " showsActivityIndicator="YES">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </backgroundConfiguration>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="resetpressed:" destination="kDN-zd-nSy" eventType="touchUpInside" id="oJg-AE-Hne"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i7v-Q0-spq">
+                                <rect key="frame" x="138" y="714" width="140" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="عد">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" systemColor="systemBrownColor"/>
+                                        <color key="strokeColor" systemColor="systemBrownColor"/>
+                                    </backgroundConfiguration>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="countpressed:" destination="kDN-zd-nSy" eventType="touchUpInside" id="sOx-3b-cye"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="وأذكر ربك إذا نسيت" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q99-Kz-f3d">
+                                <rect key="frame" x="67" y="83" width="255" height="103"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="count" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rxp-Hz-FVO">
+                                <rect key="frame" x="43" y="316" width="331" height="115"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="46"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="-26"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mmk-Nm-5vv">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="2eU-0m-eya"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Tasbih" image="circle.hexagonpath" catalog="system" id="xgI-he-BTI"/>
+                    <connections>
+                        <outlet property="countlable" destination="rxp-Hz-FVO" id="i85-WT-v1s"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P5N-Bm-YL1" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-49" y="-589"/>
+        </scene>
+        <!--مهام اليوم-->
+        <scene sceneID="DBE-VQ-jm6">
+            <objects>
+                <viewController id="sp7-Nb-hPb" customClass="ViewControllerT" customModule="jahez_9" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ybx-NB-UFk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rZQ-PR-d9p">
+                                <rect key="frame" x="118" y="78" width="257" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="mdh-wl-OO0">
+                                <rect key="frame" x="0.0" y="292" width="414" height="604"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="taskCell" rowHeight="164" id="IEi-f1-MC6" customClass="ViewControllercCell" customModule="jahez_9">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="164"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="IEi-f1-MC6" id="pW9-uJ-4ir">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="164"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8fP-oC-Z5P">
+                                                    <rect key="frame" x="40" y="11" width="41" height="136"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="plain" image="checkedButton" title=""/>
+                                                    <connections>
+                                                        <action selector="buttonAction:" destination="IEi-f1-MC6" eventType="touchUpInside" id="jfZ-4B-Jdo"/>
+                                                    </connections>
+                                                </button>
+                                                <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BFW-8g-rxf">
+                                                    <rect key="frame" x="118" y="65" width="276" height="34"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="276" id="vCq-h6-HWe"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="BFW-8g-rxf" firstAttribute="leading" secondItem="8fP-oC-Z5P" secondAttribute="trailing" constant="37" id="JRc-Nt-eLC"/>
+                                                <constraint firstItem="8fP-oC-Z5P" firstAttribute="top" secondItem="pW9-uJ-4ir" secondAttribute="topMargin" id="Seu-Fu-2wK"/>
+                                                <constraint firstItem="BFW-8g-rxf" firstAttribute="centerY" secondItem="pW9-uJ-4ir" secondAttribute="centerY" id="Umz-si-aZt"/>
+                                                <constraint firstItem="BFW-8g-rxf" firstAttribute="trailing" secondItem="pW9-uJ-4ir" secondAttribute="trailingMargin" id="cuz-1f-esp"/>
+                                                <constraint firstItem="8fP-oC-Z5P" firstAttribute="leading" secondItem="pW9-uJ-4ir" secondAttribute="leadingMargin" constant="20" id="iAA-U2-uhs"/>
+                                                <constraint firstItem="BFW-8g-rxf" firstAttribute="top" secondItem="pW9-uJ-4ir" secondAttribute="topMargin" constant="8" id="lDI-2L-KVl"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="8fP-oC-Z5P" secondAttribute="bottom" constant="6" id="qnE-Ir-5Nv"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="buttonCheck" destination="8fP-oC-Z5P" id="pUO-Ed-XSr"/>
+                                            <outlet property="textFTVcell" destination="BFW-8g-rxf" id="S93-el-Ucp"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </variation>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qzh-ge-C8d">
+                                <rect key="frame" x="32" y="78" width="64" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="MJm-9t-R3x"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="addButton" title="">
+                                    <backgroundConfiguration key="background"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="buttonAddTV:" destination="sp7-Nb-hPb" eventType="touchUpInside" id="Bzk-S5-1sr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="3sG-iY-UZa"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Qzh-ge-C8d" firstAttribute="top" secondItem="3sG-iY-UZa" secondAttribute="top" constant="34" id="4Xh-nR-qEY"/>
+                            <constraint firstItem="rZQ-PR-d9p" firstAttribute="leading" secondItem="Qzh-ge-C8d" secondAttribute="trailing" constant="22" id="71S-wQ-cko"/>
+                            <constraint firstItem="3sG-iY-UZa" firstAttribute="trailing" secondItem="rZQ-PR-d9p" secondAttribute="trailing" constant="39" id="ETy-QY-ARO"/>
+                            <constraint firstItem="rZQ-PR-d9p" firstAttribute="top" secondItem="Qzh-ge-C8d" secondAttribute="top" id="Qx3-rb-uSj"/>
+                            <constraint firstItem="Qzh-ge-C8d" firstAttribute="leading" secondItem="3sG-iY-UZa" secondAttribute="leading" constant="32" id="rVc-9Y-OZp"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="ToDo" image="square.and.pencil" catalog="system" id="Fgi-jh-4YQ"/>
+                    <navigationItem key="navigationItem" title="مهام اليوم" prompt="انجز ✍︎" id="PlH-l9-wet"/>
+                    <connections>
+                        <outlet property="taskeTV" destination="mdh-wl-OO0" id="1Eo-vf-Nft"/>
+                        <outlet property="textFTV" destination="rZQ-PR-d9p" id="hkR-eK-48A"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bwT-6R-AwU" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-49.275362318840585" y="786.83035714285711"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="9W7-SF-sGY">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="HVA-Of-KJR" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qlH-x5-SIV">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="kDN-zd-nSy" kind="relationship" relationship="viewControllers" id="KiZ-5J-1dL"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="58U-QF-X2v"/>
+                        <segue destination="sp7-Nb-hPb" kind="relationship" relationship="viewControllers" id="FAc-i8-m5y"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X3S-1G-4Uw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1403" y="222"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="addButton" width="66" height="66"/>
+        <image name="checkedButton" width="66" height="66"/>
+        <image name="circle.hexagonpath" catalog="system" width="128" height="112"/>
+        <image name="jahez" width="85" height="85"/>
+        <image name="square.and.pencil" catalog="system" width="128" height="115"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
