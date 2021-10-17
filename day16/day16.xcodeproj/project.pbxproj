@@ -18,8 +18,8 @@
 		8F15B4B6271C10750059850E /* Cell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F15B4B5271C10750059850E /* Cell2.swift */; };
 		8F15B4B8271C108A0059850E /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F15B4B7271C108A0059850E /* Data.swift */; };
 		8F15B4BA271C10BB0059850E /* VC1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F15B4B9271C10BB0059850E /* VC1.swift */; };
-		8F15B4BF271C131C0059850E /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F15B4BE271C131C0059850E /* ViewController2.swift */; };
-		8F15B4C1271C14690059850E /* taskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F15B4C0271C14690059850E /* taskTableViewCell.swift */; };
+		8F26B405271C4BC900620911 /* taskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F26B403271C4BC900620911 /* taskTableViewCell.swift */; };
+		8F26B406271C4BC900620911 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F26B404271C4BC900620911 /* ViewController2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,8 +36,8 @@
 		8F15B4B5271C10750059850E /* Cell2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Cell2.swift; path = "../../../../../week2-project1-jahez/HUNGERSTATION1/HUNGERSTATION1/Cell2.swift"; sourceTree = "<group>"; };
 		8F15B4B7271C108A0059850E /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Data.swift; path = "../../../../../week2-project1-jahez/HUNGERSTATION1/HUNGERSTATION1/Data.swift"; sourceTree = "<group>"; };
 		8F15B4B9271C10BB0059850E /* VC1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VC1.swift; path = "../../../../../week2-project1-jahez/HUNGERSTATION1/HUNGERSTATION1/VC1.swift"; sourceTree = "<group>"; };
-		8F15B4BE271C131C0059850E /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController2.swift; path = "../../../../../../week3-ptoject1-todo/project3 TO  Do List/project3 TO  Do List/ViewController2.swift"; sourceTree = "<group>"; };
-		8F15B4C0271C14690059850E /* taskTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = taskTableViewCell.swift; path = "../../../../../../week3-ptoject1-todo/project3 TO  Do List/project3 TO  Do List/taskTableViewCell.swift"; sourceTree = "<group>"; };
+		8F26B403271C4BC900620911 /* taskTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = taskTableViewCell.swift; sourceTree = "<group>"; };
+		8F26B404271C4BC900620911 /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,9 +70,10 @@
 		8F15B497271C0B760059850E /* day16 */ = {
 			isa = PBXGroup;
 			children = (
-				8F15B4AE271C0F520059850E /* jahez */,
+				8F26B402271C4BB300620911 /* To Do List */,
 				8F15B498271C0B760059850E /* AppDelegate.swift */,
 				8F15B49A271C0B760059850E /* SceneDelegate.swift */,
+				8F15B4AE271C0F520059850E /* jahez */,
 				8F15B4AC271C0C6A0059850E /* tasbih */,
 				8F15B49E271C0B760059850E /* Main.storyboard */,
 				8F15B4A1271C0B770059850E /* Assets.xcassets */,
@@ -86,7 +87,6 @@
 			isa = PBXGroup;
 			children = (
 				8F15B49C271C0B760059850E /* ViewController.swift */,
-				8F15B4BB271C12A30059850E /* To Do List */,
 			);
 			path = tasbih;
 			sourceTree = "<group>";
@@ -103,11 +103,11 @@
 			path = jahez;
 			sourceTree = "<group>";
 		};
-		8F15B4BB271C12A30059850E /* To Do List */ = {
+		8F26B402271C4BB300620911 /* To Do List */ = {
 			isa = PBXGroup;
 			children = (
-				8F15B4BE271C131C0059850E /* ViewController2.swift */,
-				8F15B4C0271C14690059850E /* taskTableViewCell.swift */,
+				8F26B403271C4BC900620911 /* taskTableViewCell.swift */,
+				8F26B404271C4BC900620911 /* ViewController2.swift */,
 			);
 			path = "To Do List";
 			sourceTree = "<group>";
@@ -183,14 +183,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F15B4BF271C131C0059850E /* ViewController2.swift in Sources */,
 				8F15B4B2271C100C0059850E /* Cell1.swift in Sources */,
 				8F15B49D271C0B760059850E /* ViewController.swift in Sources */,
 				8F15B4B6271C10750059850E /* Cell2.swift in Sources */,
-				8F15B4C1271C14690059850E /* taskTableViewCell.swift in Sources */,
 				8F15B499271C0B760059850E /* AppDelegate.swift in Sources */,
 				8F15B4B4271C106B0059850E /* VC2.swift in Sources */,
+				8F26B406271C4BC900620911 /* ViewController2.swift in Sources */,
 				8F15B49B271C0B760059850E /* SceneDelegate.swift in Sources */,
+				8F26B405271C4BC900620911 /* taskTableViewCell.swift in Sources */,
 				8F15B4BA271C10BB0059850E /* VC1.swift in Sources */,
 				8F15B4B8271C108A0059850E /* Data.swift in Sources */,
 			);
