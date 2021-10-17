@@ -13,6 +13,7 @@ class Tasbih: UIViewController {
  
     }
  var currentcounter = 0
+ 
     @IBOutlet weak var label: UILabel!
     
     func reset(){
@@ -20,16 +21,16 @@ class Tasbih: UIViewController {
         label.text = String(describing: currentcounter)
     }
     
-    @IBAction func resett(_ sender: Any) {
-    reset()
-    }
+    @IBAction func resett(_ sender: Any)
+    {
+    reset()    }
     
     func count(){
         currentcounter += 1
         label.text = String(describing: currentcounter)
     }
     
-    @IBAction func coun(_ sender: Any) {
+    @IBAction func countt(_ sender: Any) {
     count()
-    }
+}
 }
